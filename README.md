@@ -1,5 +1,5 @@
 
-```markdown
+
 # 🚆 AI-Powered Train Traffic Control System
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 # Set up environment
 cp .env.example .env
-```
+
 
 ### Method 2: Docker Installation
 
