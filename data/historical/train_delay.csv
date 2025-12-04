@@ -1,0 +1,13 @@
+train_id,train_number,train_name,date,source,destination,scheduled_departure,actual_departure,scheduled_arrival,actual_arrival,delay_minutes,delay_reason,weather_condition
+12001,Rajdhani Express,2024-01-01,Mumbai Central,Delhi,08:00:00,08:15:00,20:30:00,20:45:00,15,late_crew_arrival,clear
+12002,Shatabdi Express,2024-01-01,Mumbai Central,Ahmedabad,06:30:00,06:30:00,14:45:00,14:40:00,-5,on_time,clear
+12951,Rajdhani Express,2024-01-01,Delhi,Mumbai,15:45:00,16:00:00,08:30:00,08:50:00,20,foggy_weather,fog
+19019,Deccan Express,2024-01-01,Mumbai Central,Pune,07:20:00,07:35:00,11:10:00,11:30:00,20,signal_failure,rain
+12137,Punjab Mail,2024-01-01,Mumbai Central,Amritsar,09:45:00,10:00:00,12:30:00,13:15:00,45,rolling_stock_issue,clear
+12309,Rajendra Nagar Express,2024-01-01,Delhi,Patna,22:30:00,22:45:00,14:00:00,14:30:00,30,line_congestion,clear
+12003,Rajdhani Express,2024-01-02,Mumbai Central,Delhi,08:00:00,08:10:00,20:30:00,20:35:00,5,late_crew_arrival,clear
+12004,Shatabdi Express,2024-01-02,Mumbai Central,Ahmedabad,06:30:00,06:30:00,14:45:00,14:42:00,-3,on_time,clear
+12952,Rajdhani Express,2024-01-02,Delhi,Mumbai,15:45:00,15:45:00,08:30:00,08:30:00,0,on_time,clear
+19020,Deccan Express,2024-01-02,Mumbai Central,Pune,07:20:00,07:20:00,11:10:00,11:05:00,-5,on_time,clear
+12138,Punjab Mail,2024-01-02,Mumbai Central,Amritsar,09:45:00,09:50:00,12:30:00,12:50:00,20,rolling_stock_issue,rain
+12310,Rajendra Nagar Express,2024-01-02,Delhi,Patna,22:30:00,23:00:00,14:00:00,15:00:00,60,line_congestion,fog
