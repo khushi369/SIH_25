@@ -1,6 +1,3 @@
-Here's the complete `README.md` file with all installation and usage instructions:
-
-# **README.md** (Complete Code)
 
 ```markdown
 # 🚆 AI-Powered Train Traffic Control System
@@ -362,42 +359,3 @@ optimization:
   solver_timeout_seconds: 20  # Reduced from 30
 ```
 
-## 📚 Documentation
-
-### Additional Resources
-- **API Documentation**: http://localhost:8000/docs
-- **Code Documentation**: Run `pydoc src.data_models.station`
-- **Demo Videos**: Check `docs/demo/` directory
-- **Research Papers**: Check `docs/papers/` directory
-
-### Development Documentation
-```bash
-# Generate code documentation
-pip install pdoc
-pdoc --html src --output-dir docs/
-
-# Generate UML diagrams
-pip install pyreverse
-pyreverse -o png -p TrainControl src/
-```
-
-## 🤝 Contributing
-
-### Development Workflow
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Write tests
-5. Submit a pull request
-
-### Code Style
-```bash
-# Install pre-commit hooks
-pip install pre-commit
-pre-commit install
-
-# Run code formatting
-black src/
-isort src/
-flake8 src/
-```
