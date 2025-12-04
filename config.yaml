@@ -1,0 +1,24 @@
+optimization:
+  horizon_hours: 6
+  time_step_minutes: 5
+  solver_timeout_seconds: 30
+  min_headway_minutes: 5
+  dwell_time_range: [2, 15]
+  
+simulation:
+  speed_variation: 0.1
+  delay_probability: 0.05
+  max_delay_minutes: 30
+  
+ml:
+  travel_time_model_path: "models/travel_time_predictor.pth"
+  retrain_interval_hours: 24
+  
+api:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+  
+dashboard:
+  port: 8501
+  refresh_interval_seconds: 10
