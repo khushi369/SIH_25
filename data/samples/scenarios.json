@@ -1,0 +1,87 @@
+{
+  "scenarios": {
+    "normal": {
+      "name": "Normal Operations",
+      "description": "Regular operations with standard traffic density",
+      "traffic_density": 1.0,
+      "delay_probability": 0.05,
+      "weather_condition": "clear",
+      "infrastructure_status": "fully_operational"
+    },
+    "congested": {
+      "name": "Peak Hour Congestion",
+      "description": "High traffic density during peak hours",
+      "traffic_density": 1.8,
+      "delay_probability": 0.15,
+      "weather_condition": "clear",
+      "infrastructure_status": "fully_operational"
+    },
+    "weather_disruption": {
+      "name": "Weather Disruption",
+      "description": "Operations during heavy fog/rain",
+      "traffic_density": 0.8,
+      "delay_probability": 0.25,
+      "weather_condition": "fog",
+      "infrastructure_status": "fully_operational",
+      "speed_reduction_percent": 30
+    },
+    "infrastructure_failure": {
+      "name": "Infrastructure Failure",
+      "description": "Single line blockage due to maintenance/accident",
+      "traffic_density": 0.6,
+      "delay_probability": 0.35,
+      "weather_condition": "clear",
+      "infrastructure_status": "single_line_working",
+      "blocked_segments": ["segment_de"],
+      "alternate_routes": ["via_station_h"]
+    },
+    "festival_special": {
+      "name": "Festival Season Special",
+      "description": "Increased passenger traffic with special trains",
+      "traffic_density": 2.2,
+      "delay_probability": 0.20,
+      "weather_condition": "clear",
+      "infrastructure_status": "fully_operational",
+      "additional_trains": 12,
+      "priority_override": true
+    },
+    "maintenance_block": {
+      "name": "Night Maintenance Block",
+      "description": "Night maintenance affecting operations",
+      "traffic_density": 0.4,
+      "delay_probability": 0.10,
+      "weather_condition": "clear",
+      "infrastructure_status": "maintenance_block",
+      "maintenance_blocks": [
+        {
+          "segment": "segment_bc",
+          "start": "22:00",
+          "end": "04:00",
+          "type": "track_maintenance"
+        }
+      ]
+    }
+  },
+  "disruption_types": {
+    "signal_failure": {
+      "impact": "high",
+      "recovery_time_minutes": 60,
+      "affected_trains_per_hour": 8
+    },
+    "rolling_stock_issue": {
+      "impact": "medium",
+      "recovery_time_minutes": 45,
+      "affected_trains_per_hour": 4
+    },
+    "weather_related": {
+      "impact": "variable",
+      "recovery_time_minutes": 120,
+      "affected_trains_per_hour": 12
+    },
+    "infrastructure_damage": {
+      "impact": "critical",
+      "recovery_time_minutes": 240,
+      "affected_trains_per_hour": 20
+    }
+  }
+}
